@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		8444EC0F1BB2E5E1006E5410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC0E1BB2E5E1006E5410 /* main.m */; };
 		8444EC121BB2E5E1006E5410 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC111BB2E5E1006E5410 /* AppDelegate.m */; };
-		8444EC151BB2E5E1006E5410 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC141BB2E5E1006E5410 /* ViewController.m */; };
 		8444EC181BB2E5E1006E5410 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8444EC161BB2E5E1006E5410 /* Main.storyboard */; };
 		8444EC1B1BB2E5E1006E5410 /* Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC191BB2E5E1006E5410 /* Diary.xcdatamodeld */; };
 		8444EC1D1BB2E5E1006E5410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8444EC1C1BB2E5E1006E5410 /* Assets.xcassets */; };
 		8444EC201BB2E5E1006E5410 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8444EC1E1BB2E5E1006E5410 /* LaunchScreen.storyboard */; };
+		8444EC281BB2E602006E5410 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8444EC271BB2E602006E5410 /* CoreData.framework */; };
+		8444EC2B1BB2E85B006E5410 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC2A1BB2E85B006E5410 /* CoreDataStack.m */; settings = {ASSET_TAGS = (); }; };
+		8444EC2D1BB2EBD7006E5410 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8444EC2C1BB2EBD7006E5410 /* CoreFoundation.framework */; };
+		8444EC361BB2FC0B006E5410 /* NewEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC351BB2FC0B006E5410 /* NewEntryViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8444EC3B1BB2FDE5006E5410 /* DiaryEntry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC381BB2FDE5006E5410 /* DiaryEntry+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		8444EC3C1BB2FDE5006E5410 /* DiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC3A1BB2FDE5006E5410 /* DiaryEntry.m */; settings = {ASSET_TAGS = (); }; };
+		8444EC3F1BB3075A006E5410 /* EntryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC3E1BB3075A006E5410 /* EntryListViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +27,23 @@
 		8444EC0E1BB2E5E1006E5410 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8444EC101BB2E5E1006E5410 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8444EC111BB2E5E1006E5410 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8444EC131BB2E5E1006E5410 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8444EC141BB2E5E1006E5410 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8444EC171BB2E5E1006E5410 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8444EC1A1BB2E5E1006E5410 /* Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diary.xcdatamodel; sourceTree = "<group>"; };
 		8444EC1C1BB2E5E1006E5410 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8444EC1F1BB2E5E1006E5410 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8444EC211BB2E5E1006E5410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8444EC271BB2E602006E5410 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8444EC291BB2E85B006E5410 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		8444EC2A1BB2E85B006E5410 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		8444EC2C1BB2EBD7006E5410 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8444EC341BB2FC0B006E5410 /* NewEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEntryViewController.h; sourceTree = "<group>"; };
+		8444EC351BB2FC0B006E5410 /* NewEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEntryViewController.m; sourceTree = "<group>"; };
+		8444EC371BB2FDE5006E5410 /* DiaryEntry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DiaryEntry+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8444EC381BB2FDE5006E5410 /* DiaryEntry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DiaryEntry+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8444EC391BB2FDE5006E5410 /* DiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryEntry.h; sourceTree = "<group>"; };
+		8444EC3A1BB2FDE5006E5410 /* DiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryEntry.m; sourceTree = "<group>"; };
+		8444EC3D1BB3075A006E5410 /* EntryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryListViewController.h; sourceTree = "<group>"; };
+		8444EC3E1BB3075A006E5410 /* EntryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8444EC2D1BB2EBD7006E5410 /* CoreFoundation.framework in Frameworks */,
+				8444EC281BB2E602006E5410 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +62,12 @@
 		8444EC011BB2E5E1006E5410 = {
 			isa = PBXGroup;
 			children = (
+				8444EC371BB2FDE5006E5410 /* DiaryEntry+CoreDataProperties.h */,
+				8444EC381BB2FDE5006E5410 /* DiaryEntry+CoreDataProperties.m */,
+				8444EC391BB2FDE5006E5410 /* DiaryEntry.h */,
+				8444EC3A1BB2FDE5006E5410 /* DiaryEntry.m */,
+				8444EC2C1BB2EBD7006E5410 /* CoreFoundation.framework */,
+				8444EC271BB2E602006E5410 /* CoreData.framework */,
 				8444EC0C1BB2E5E1006E5410 /* Diary */,
 				8444EC0B1BB2E5E1006E5410 /* Products */,
 			);
@@ -62,8 +86,12 @@
 			children = (
 				8444EC101BB2E5E1006E5410 /* AppDelegate.h */,
 				8444EC111BB2E5E1006E5410 /* AppDelegate.m */,
-				8444EC131BB2E5E1006E5410 /* ViewController.h */,
-				8444EC141BB2E5E1006E5410 /* ViewController.m */,
+				8444EC291BB2E85B006E5410 /* CoreDataStack.h */,
+				8444EC2A1BB2E85B006E5410 /* CoreDataStack.m */,
+				8444EC3D1BB3075A006E5410 /* EntryListViewController.h */,
+				8444EC3E1BB3075A006E5410 /* EntryListViewController.m */,
+				8444EC341BB2FC0B006E5410 /* NewEntryViewController.h */,
+				8444EC351BB2FC0B006E5410 /* NewEntryViewController.m */,
 				8444EC161BB2E5E1006E5410 /* Main.storyboard */,
 				8444EC1C1BB2E5E1006E5410 /* Assets.xcassets */,
 				8444EC1E1BB2E5E1006E5410 /* LaunchScreen.storyboard */,
@@ -153,9 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8444EC151BB2E5E1006E5410 /* ViewController.m in Sources */,
+				8444EC3C1BB2FDE5006E5410 /* DiaryEntry.m in Sources */,
+				8444EC3F1BB3075A006E5410 /* EntryListViewController.m in Sources */,
+				8444EC2B1BB2E85B006E5410 /* CoreDataStack.m in Sources */,
+				8444EC361BB2FC0B006E5410 /* NewEntryViewController.m in Sources */,
 				8444EC121BB2E5E1006E5410 /* AppDelegate.m in Sources */,
 				8444EC0F1BB2E5E1006E5410 /* main.m in Sources */,
+				8444EC3B1BB2FDE5006E5410 /* DiaryEntry+CoreDataProperties.m in Sources */,
 				8444EC1B1BB2E5E1006E5410 /* Diary.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +304,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.intelligems.Diary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -283,6 +316,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.intelligems.Diary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

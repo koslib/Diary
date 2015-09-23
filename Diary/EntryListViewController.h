@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  EntryListViewController.h
 //  Diary
 //
 //  Created by Konstantinos Livieratos on 9/23/15.
@@ -7,14 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreData/CoreData.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-
-
+@interface EntryListViewController : UITableViewController
 
 @end
-
