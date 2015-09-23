@@ -16,7 +16,7 @@
 		8444EC281BB2E602006E5410 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8444EC271BB2E602006E5410 /* CoreData.framework */; };
 		8444EC2B1BB2E85B006E5410 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC2A1BB2E85B006E5410 /* CoreDataStack.m */; settings = {ASSET_TAGS = (); }; };
 		8444EC2D1BB2EBD7006E5410 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8444EC2C1BB2EBD7006E5410 /* CoreFoundation.framework */; };
-		8444EC361BB2FC0B006E5410 /* NewEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC351BB2FC0B006E5410 /* NewEntryViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8444EC361BB2FC0B006E5410 /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC351BB2FC0B006E5410 /* EntryViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8444EC3B1BB2FDE5006E5410 /* DiaryEntry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC381BB2FDE5006E5410 /* DiaryEntry+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		8444EC3C1BB2FDE5006E5410 /* DiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC3A1BB2FDE5006E5410 /* DiaryEntry.m */; settings = {ASSET_TAGS = (); }; };
 		8444EC3F1BB3075A006E5410 /* EntryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444EC3E1BB3075A006E5410 /* EntryListViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -36,8 +36,8 @@
 		8444EC291BB2E85B006E5410 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
 		8444EC2A1BB2E85B006E5410 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 		8444EC2C1BB2EBD7006E5410 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		8444EC341BB2FC0B006E5410 /* NewEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEntryViewController.h; sourceTree = "<group>"; };
-		8444EC351BB2FC0B006E5410 /* NewEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEntryViewController.m; sourceTree = "<group>"; };
+		8444EC341BB2FC0B006E5410 /* EntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryViewController.h; sourceTree = "<group>"; };
+		8444EC351BB2FC0B006E5410 /* EntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryViewController.m; sourceTree = "<group>"; };
 		8444EC371BB2FDE5006E5410 /* DiaryEntry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DiaryEntry+CoreDataProperties.h"; sourceTree = "<group>"; };
 		8444EC381BB2FDE5006E5410 /* DiaryEntry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DiaryEntry+CoreDataProperties.m"; sourceTree = "<group>"; };
 		8444EC391BB2FDE5006E5410 /* DiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryEntry.h; sourceTree = "<group>"; };
@@ -90,8 +90,8 @@
 				8444EC2A1BB2E85B006E5410 /* CoreDataStack.m */,
 				8444EC3D1BB3075A006E5410 /* EntryListViewController.h */,
 				8444EC3E1BB3075A006E5410 /* EntryListViewController.m */,
-				8444EC341BB2FC0B006E5410 /* NewEntryViewController.h */,
-				8444EC351BB2FC0B006E5410 /* NewEntryViewController.m */,
+				8444EC341BB2FC0B006E5410 /* EntryViewController.h */,
+				8444EC351BB2FC0B006E5410 /* EntryViewController.m */,
 				8444EC161BB2E5E1006E5410 /* Main.storyboard */,
 				8444EC1C1BB2E5E1006E5410 /* Assets.xcassets */,
 				8444EC1E1BB2E5E1006E5410 /* LaunchScreen.storyboard */,
@@ -184,7 +184,7 @@
 				8444EC3C1BB2FDE5006E5410 /* DiaryEntry.m in Sources */,
 				8444EC3F1BB3075A006E5410 /* EntryListViewController.m in Sources */,
 				8444EC2B1BB2E85B006E5410 /* CoreDataStack.m in Sources */,
-				8444EC361BB2FC0B006E5410 /* NewEntryViewController.m in Sources */,
+				8444EC361BB2FC0B006E5410 /* EntryViewController.m in Sources */,
 				8444EC121BB2E5E1006E5410 /* AppDelegate.m in Sources */,
 				8444EC0F1BB2E5E1006E5410 /* main.m in Sources */,
 				8444EC3B1BB2FDE5006E5410 /* DiaryEntry+CoreDataProperties.m in Sources */,

@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewEntryViewController : UIViewController
+@class DiaryEntry;
+
+@interface EntryViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+
+@property(nonatomic, strong) DiaryEntry *entry;
 
 @end

@@ -6,19 +6,21 @@
 //  Copyright © 2015 Konstantinos Livieratos. All rights reserved.
 //
 
-#import "NewEntryViewController.h"
+#import "EntryViewController.h"
 #import "DiaryEntry.h"
 #import "CoreDataStack.h"
 
-@interface NewEntryViewController ()
+@interface EntryViewController ()
 
 @end
 
-@implementation NewEntryViewController
+@implementation EntryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    if (self.entry != nil) {
+        self.textField.text = self.entry.body;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,8 +50,19 @@
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
+-(void)updateDiaryEntry {
+    self.entry.body = self.textField.text;
+    
+    CoreDataStack *coreDataStack = [CoreDataStack defaultStack];
+    [coreDataStack saveContext];
+}
+
 - (IBAction)doneWasPressed:(id)sender {
-    [self insertDiaryEntry];
+    if (self.entry != nil) {
+        [self updateDiaryEntry];
+    } else {
+        [self insertDiaryEntry];
+    }
     [self dismissSelf];
 }
 
